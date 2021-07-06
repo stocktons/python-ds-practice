@@ -14,3 +14,8 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+    # extracting from the dictionaries: for person of names access first_last of person --> new list
+    # result loop condition
+    return [f"{person['first']} {person['last']}" for person in people]
+        
+
