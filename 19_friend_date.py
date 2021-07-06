@@ -16,3 +16,7 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+
+    # assuming the arguements passed will always be correct 
+
+    return True if list(set(a[-1]) & set(b[-1])) else False
